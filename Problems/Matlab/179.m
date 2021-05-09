@@ -11,9 +11,9 @@ for n = 2:N-1
     divs = [1,facs(1)];
     for fi = facs(2:end)
         divs = [1;fi]*divs;
-        divs = divs(:)';
+        divs = unique(divs(:)');
     end
-    ni = length(unique(divs));
+    ni = length(divs);
     if ni == n_last
         cont = cont+1;
     end
