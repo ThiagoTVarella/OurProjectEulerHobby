@@ -6,8 +6,7 @@ def isPrime(n):
 
 # create a key for rearrangements
 pr = [x for x in range(1001,9999,2) if isPrime(x)]
-primes = [[int(str(x)[0]), int(str(x)[1]), int(str(x)[2]), int(str(x)[3])] for x in range(1000,9999) if isPrime(x)]
-
+primes = [[int(str(x)[0]), int(str(x)[1]), int(str(x)[2]), int(str(x)[3])] for x in pr]
 for i in range(len(primes)):
   primes[i].sort()
   primes[i] = 1000*primes[i][0] + 100*primes[i][1] + 10*primes[i][2] + primes[i][3]
