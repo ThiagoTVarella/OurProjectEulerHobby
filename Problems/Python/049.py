@@ -27,7 +27,6 @@ for num in primes:
 for el in dict:
   x = dict[el]
   if len(x) >= 3:
-    diffs = []
     for i in range(len(x)-2):
       for j in range(i+1, len(x)-1):
         for k in range(j+1, len(x)):
